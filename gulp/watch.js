@@ -10,7 +10,7 @@ function isOnlyChange(event) {
 }
 
 gulp.task('watch', ['inject'], function () {
-  gulp.watch([conf.paths.html, 'bower.json'], ['inject']);
+  gulp.watch(conf.paths.html, ['inject']);
   gulp.watch(conf.paths.sass, ['styles'], function() {});
   gulp.watch(conf.paths.js, function(event) {
     if(isOnlyChange(event)) {
@@ -19,8 +19,6 @@ gulp.task('watch', ['inject'], function () {
       gulp.start('inject');
     }
   });
-
-  gulp.watch(conf.paths.html, function(event) {
-    browserSync.reload(event.path);
-  });
+  // reloads the generated HTML page
+  gulp.watch('.tmp/serve/index.html').on('change', browserSync.reload);
 });
