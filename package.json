@@ -1,0 +1,31 @@
+{
+  "name": "zalora-frontend-challenge",
+  "version": "1.0.0",
+  "description": "Zalora Frontend Challenge for the Zalora Interview",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-inject": "^4.3.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalu/zalora-frontend-challenge.git"
+  },
+  "author": "Tom Huynh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digitalu/zalora-frontend-challenge/issues"
+  },
+  "homepage": "https://github.com/digitalu/zalora-frontend-challenge#readme"
+}
