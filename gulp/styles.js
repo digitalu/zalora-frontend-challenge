@@ -16,4 +16,5 @@ gulp.task('styles', function() {
     .pipe($.sass(options)).on('error', conf.errorHandler('Sass'))
     .pipe($.autoprefixer()).on('error', conf.errorHandler('Autoprefixer'))
     .pipe(gulp.dest(path.join(conf.paths.tmp, '/serve/app/css')))
+    .pipe(browserSync.reload({stream: true}));
 })
