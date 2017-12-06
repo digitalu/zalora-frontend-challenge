@@ -12,13 +12,7 @@ function isOnlyChange(event) {
 gulp.task('watch', ['inject'], function () {
   gulp.watch(conf.paths.html, ['inject']);
   gulp.watch(conf.paths.sass, ['styles'], function() {});
-  gulp.watch(conf.paths.js, function(event) {
-    if(isOnlyChange(event)) {
-      gulp.start('scripts');
-    } else {
-      gulp.start('inject');
-    }
-  });
+  gulp.watch(conf.paths.js, ['inject']);
   // reloads the generated HTML page
   gulp.watch('.tmp/serve/index.html').on('change', browserSync.reload);
 });
