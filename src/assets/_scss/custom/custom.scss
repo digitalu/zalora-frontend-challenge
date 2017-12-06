@@ -1,10 +1,13 @@
 //-------------------------------------
-// Include Global
+// Partials
 //-------------------------------------
 @import '../global/global';
-
 @import 'components/spinner';
 
+
+//-------------------------------------
+// App Structure
+//-------------------------------------
 .app {
     display: flex;
     flex-direction: column;
@@ -22,8 +25,6 @@
     display: flex;
     background: #fff;
 }
-
-
 
 .header__container {
     width: 996px;
@@ -46,6 +47,10 @@
     max-width: none !important;
 }
 
+
+//-------------------------------------
+// Product Layout
+//-------------------------------------
 .product {
     display: flex;
     flex-direction: row;
@@ -86,6 +91,9 @@
 }
 
 
+//-------------------------------------
+// Checkmark
+//-------------------------------------
 @keyframes animateKick {
     from { left: -8px; }
     to { left: 0px; }
@@ -165,8 +173,8 @@
         display:inline-block;
     }
     .checkmark__kick {
-        left:0px;
-        top:12px;
+        left: 0px;
+        top: 12px;
         animation: .35s ease-out animateKick;
         animation-fill-mode: forwards;
     }
