@@ -9,7 +9,7 @@ var path = require('path'),
 gulp.task('serve', ['watch'], function() {
   browserSync.init({
     server: {
-      baseDir: '.tmp/serve/',
+      baseDir: ['.tmp/serve/', 'src/'],
       browser: 'chrome'
     }
   })

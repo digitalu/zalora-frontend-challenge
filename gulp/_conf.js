@@ -8,7 +8,7 @@ exports.paths = {
   // File types
   html: 'src/**/*.html',
   js: 'src/**/*.js',
-  sass: 'src/assets/_scss/**/*.{scss,sass}',
+  sass: 'src/assets/_scss/custom/**/*.{scss,sass}',
 };
 
 exports.errorHandler = function(title) {
