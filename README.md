@@ -7,9 +7,10 @@ The code here demonstrates a checkmark animation when the Add-to-Cart button is 
 - Upon click, I faked a API call to display a spinner
 - Upon success, checkmark is displayed.
 
-Zalora Global SCSS is installed as a submodule.
+Zalora Global SCSS is installed as a submodule so be sure to install those too.
 
 ```
+$ git clone --recursive git@github.com:digitalu/zalora-frontend-challenge.git
 $ npm install
 $ gulp serve
 ```
